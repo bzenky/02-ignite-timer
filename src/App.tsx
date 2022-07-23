@@ -1,12 +1,17 @@
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle } from './styles/global'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
+
 import { defaultTheme } from './styles/themes/default'
+import { GlobalStyle } from './styles/global'
 
 export function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <h1>Znk</h1>
-      <GlobalStyle />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={defaultTheme}>
+        <Router />
+        <GlobalStyle />
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
