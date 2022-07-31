@@ -5,6 +5,15 @@ export const HistoryContainer = styled.main`
   flex-direction: column;
   flex: 1;
   padding: 3.5rem;
+  overflow: auto;
+
+  @media screen and (max-width: 1024px) {
+    padding: 3rem 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 3rem 0.25rem;
+  }
 
   h1 {
     font-size: 1.5rem;
@@ -14,7 +23,6 @@ export const HistoryContainer = styled.main`
 
 export const HistoryList = styled.div`
   flex: 1;
-  overflow: auto;
   margin-top: 2rem;
 
   table {
@@ -47,6 +55,16 @@ export const HistoryList = styled.div`
       font-size: 0.875rem;
       background-color: ${({ theme }) => theme['gray-700']};
       border-top: 4px solid ${({ theme }) => theme['gray-800']};
+
+      @media screen and (max-width: 768px) {
+        padding: 0.825rem;
+        line-height: 1;
+      }
+
+      @media screen and (max-width: 425px) {
+        padding: 0.75rem;
+        line-height: 1;
+      }
 
       &:first-child {
         width: 50%;

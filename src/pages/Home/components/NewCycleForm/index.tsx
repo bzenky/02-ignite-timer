@@ -13,7 +13,7 @@ export function NewCycleForm() {
       <TaskInput
         id="task"
         type="text"
-        placeholder="Dê um nome para o seu projeto"
+        placeholder="Nome da Task"
         list="task-suggestions"
         disabled={!!activeCycle}
         {...register('task')}

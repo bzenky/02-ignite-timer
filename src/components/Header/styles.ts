@@ -5,6 +5,13 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  img {
+    @media screen and (max-width: 425px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
   nav {
     display: flex;
     gap: 0.5rem;

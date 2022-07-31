@@ -23,4 +23,26 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 1rem;
     }
+
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #323238 #202024;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #202024;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #323238;
+        border-radius: 10px;
+        border: 3px solid #323238;
+    }
 `
