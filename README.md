@@ -34,3 +34,5 @@ Clonar o repositório e rodar o comando
 ```
 yarn / npm install
 ```
+
+Disponível também em https://www.tasktimer.bzenky.dev/
